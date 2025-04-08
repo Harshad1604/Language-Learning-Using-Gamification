@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url('images/default_image.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(72, 72, 72, 0); /* You can adjust the background color and opacity of the container */
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(80, 80, 80, 0);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.044);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.story {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ffffffaa, #000000a2);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #484744, #40403d);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.choice {
+    margin: 0 10px;
+    padding: 12px 24px;
+    background-color: rgba(174, 168, 168, 0.434);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 
+}
+/* Add this CSS for popup icon and popup window */
+.popup-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    opacity: 0.8; /* Set opacity */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.popup-icon:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.popup-icon img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.popup-window {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+    opacity: 0.8; /* Set opacity */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.popup-window:hover {
+    opacity: 1; /* Make fully visible on hover */
+}
+
+.popup-content {
+    padding: 20px;
+    font-weight: bold; /* Make text bold */
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}

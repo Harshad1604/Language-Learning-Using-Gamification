@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Search Puzzle</title>
+  <link rel="stylesheet" href="wordsearch_english.css">
+</head>
+<body>
+  <body style="background-image: url('images/wordsearchbg.jpg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="container">
+    <div id="word-search"></div>
+    <div id="word-list"></div>
+    <div class="buttons">
+      <button id="search-button">Check Answer</button>
+      <button id="undo-button">Undo</button>
+      <button id="reset-button">Reset</button>
+      <button id="skip-button">Skip</button>
+    </div>
+    <div id="feedback"></div>
+     <!-- Popup icon with logo -->
+     <div class="popup-icon" onclick="openPopup()">
+      <img src="images/logo.png" alt="Logo">
+  </div>
+  <!-- Popup window -->
+  <div class="popup-window" id="popupWindow">
+      <div class="popup-content">
+          <span class="close-icon" onclick="closePopup()">&times;</span>
+          <p>NOTE 1: Search the provided word in the grid.</p>
+          <p>NOTE 2: You can select letters randomly from grid it just the sequesce of selecting letter must be followed.</p>
+      </div>
+  </div>
+  </div>
+  <script src="wordsearch_english.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoLinguist: The Quest Across Time</title>
+    <link rel="stylesheet" href="story_english.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ChronoLinguist: The Quest Across Time</h1>
+        <div class="card">
+            <p class="story">Prologue:</p>
+            <p class="story">In the heart of a bustling city stood a grand repository of knowledge - the Central Library. Dr. Amelia Brooks, a brilliant linguist known for her insatiable curiosity, frequented its halls, always in search of the next linguistic puzzle to unravel. On a rainy afternoon, she found herself drawn to a neglected section of the library, hidden away in the labyrinthine corridors of forgotten lore. As she roamed among the dusty shelves, her fingers grazing the spines of ancient tomes, she stumbled upon an ornate chest tucked away in a shadowy alcove. Intrigued, she carefully pried open the lid, revealing a treasure trove of artifacts, each whispering tales of distant lands and lost languages. At the bottom of the chest lay a peculiar object - a weathered scroll adorned with cryptic symbols and intricate designs. As she studied the mysterious symbols etched upon its surface, a sense of destiny washed over her. Little did she know, this chance discovery would set into motion a journey beyond imagination, propelling her across the boundaries of time and space in pursuit of the greatest linguistic enigma the world had ever known. The artifact held the key to unlocking the secrets of the past, present, and future, and Dr. Amelia Brooks was determined to decipher its mysteries, no matter the cost.</p>
+
+            <button class="btn" id="startButton" onclick="makeChoice()">Start Journey</button>
+
+
+            <p class="story" id="chapter"></p>
+            <p class="story" id="dialogue"></p>
+            <div class="choices">
+                <button class="choice" id="button1" onclick="makeChoice(1)">Choice 1</button>
+                <button class="choice" id="button2" onclick="makeChoice(2)">Choice 2</button>
+                <button class="choice" id="button3" onclick="makeChoice(3)">Choice 3</button>
+            </div>
+        </div>
+         <!-- Popup icon with logo -->
+         <div class="popup-icon" onclick="openPopup()">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <!-- Popup window -->
+        <div class="popup-window" id="popupWindow">
+            <div class="popup-content">
+                <span class="close-icon" onclick="closePopup()">&times;</span>
+                <p>NOTE: Read the story and proceed further according to your wish by cliking the option button.</p>
+            </div>
+        </div>
+    </div>
+    <script src="story_english.js"></script>
+</body>
+</html>

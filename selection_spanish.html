@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Selection</title>
+  <link rel="stylesheet" href="selection_english.css">
+  <style>
+    .card {
+      display: flex;
+      align-items: center;
+    }
+
+    .card img {
+      width: 50px; /* Adjust width as needed */
+      height: 50px; /* Adjust height as needed */
+      margin-right: 10px; /* Adjust spacing between image and button */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="images/rearranging_the_sentence.jpg" alt="Game 1">
+      <button onclick="window.location.href='rearrange_Spanish.html';">Rearrange The Sentence</button>
+    </div>
+    <div class="card">
+        <img src="images/decoding.jpg" alt="Game 2">
+        <button onclick="window.location.href='decode_spanish.html';">Decode The Sentence</button>
+      </div>
+    <div class="card">
+      <img src="images/wordsearch.jpg" alt="Game 3">
+      <button onclick="window.location.href='wordsearch_spanish.html';">Word Search</button>
+    </div>
+    <div class="card">
+      <img src="images/interactive_stories.jpg" alt="Game 4">
+      <button onclick="window.location.href='story_english.html';">Interactive Stories</button>
+    </div>
+     <!-- Popup icon with logo -->
+     <div class="popup-icon" onclick="openPopup()">
+      <img src="images/logo.png" alt="Logo">
+  </div>
+  <!-- Popup window -->
+  <div class="popup-window" id="popupWindow">
+      <div class="popup-content">
+          <span class="close-icon" onclick="closePopup()">&times;</span>
+          <p>NOTE: Select the game which you want to play.</p>
+      <!-- Resource button -->
+      <button onclick="openResource()">Resource</button>
+    </div>
+  </div>
+</div>
+  <script>
+    function openResource() {
+      // Replace 'resource-page.html' with the URL of the respective page
+      window.location.href = 'resource-page.html';
+    }
+  </script>
+  <script src="login.js"></script>
+</body>
+</html>

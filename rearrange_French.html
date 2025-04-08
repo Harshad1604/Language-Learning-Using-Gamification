@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rearrange the Sentence Game</title>
+<link rel="stylesheet" href="rearrange_English.css">
+</head>
+<body>
+<div class="container">
+  <h2>Rearrange the Sentence</h2>
+  <div class="card">
+    <div class="card-content">
+      <div id="scrambled-sentence" class="animated fadeIn"></div>
+      <input type="text" id="user-answer" placeholder="Your Answer">
+      <div class="button-container">
+        <button onclick="checkAnswer()">Submit</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+      <p id="result" class="animated"></p>
+    </div>
+  </div>
+   <!-- Popup icon with logo -->
+   <div class="popup-icon" onclick="openPopup()">
+    <img src="images/logo.png" alt="Logo">
+</div>
+<!-- Popup window -->
+<div class="popup-window" id="popupWindow">
+    <div class="popup-content">
+        <span class="close-icon" onclick="closePopup()">&times;</span>
+        <p>NOTE: Arrange the scrambled sentence in correct order.</p>
+     <!-- Resource button -->
+     <button onclick="openResource()">Resource</button>
+    </div>
+  </div>
+</div>
+<script src="rearrange_French.js"></script>
+<script>
+  function openResource() {
+    // Replace 'resource-page.html' with the URL of the respective page
+    window.location.href = 'resource_french.html';
+  }
+</script>
+</body>
+</html>

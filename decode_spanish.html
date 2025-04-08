@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Decoding Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('images/decodebg.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <div class="app">
+        <div class="card">
+            <h2>Translate this sentence:</h2>
+            <p id="sentence">¿Cómo estás?</p>
+            <input type="text" id="userInput" placeholder="Your translation here...">
+            <button id="checkAnswer">Check Answer</button>
+            <button id="nextSentence">Next Sentence</button>
+            <div id="feedback"></div>
+        </div>
+         <!-- Popup icon with logo -->
+         <div class="popup-icon" onclick="openPopup()">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <!-- Popup window -->
+        <div class="popup-window" id="popupWindow">
+            <div class="popup-content">
+                <span class="close-icon" onclick="closePopup()">&times;</span>
+                <p>NOTE: Enter the meaning of provided sentence in English.</p>
+           <!-- Resource button -->
+        <button onclick="openResource()">Resource</button>
+    </div>
+  </div>
+</div>
+<script src="wordsearch_spanish.js"></script>
+    <script>
+        function openResource() {
+          // Replace 'resource-page.html' with the URL of the respective page
+          window.location.href = 'resource-page.html';
+        }
+      </script>
+</body>
+</html>

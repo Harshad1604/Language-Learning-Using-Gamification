@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selector</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card {
+            display: flex;
+            align-items: center;
+        }
+        
+        .card img {
+            width: 50px; /* Adjust width as needed */
+            height: 50px; /* Adjust height as needed */
+            margin-right: 10px; /* Adjust spacing between image and button */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="card">
+            <img src="images/english.jpg" alt="Image 1">
+            <button class="lang-btn" onclick="location.href='selection_english.html';">English</button>
+        </div>
+        <div class="card">
+            <img src="images/french.jpg" alt="Image 2">
+            <button class="lang-btn" onclick="location.href='selection_french.html';">French</button>
+        </div>
+        <div class="card">
+            <img src="images/spanish.jpg" alt="Image 3">
+            <button class="lang-btn" onclick="location.href='selection_spanish.html';">Spanish</button>
+        </div>
+         <!-- Popup icon with logo -->
+         <div class="popup-icon" onclick="openPopup()">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <!-- Popup window -->
+        <div class="popup-window" id="popupWindow">
+            <div class="popup-content">
+                <span class="close-icon" onclick="closePopup()">&times;</span>
+                <p>Select the Preferable Language.</p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
+
+    </div>
+</body>
+</html>
