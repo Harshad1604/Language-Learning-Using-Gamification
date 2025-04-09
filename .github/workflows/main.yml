@@ -28,5 +28,5 @@ jobs:
         with:
           app-name: language-learning  # 🔁 Replace with your actual Azure App Service name
           slot-name: 'production'
-          publish-profile: ${{ secrets.language-learning }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE  }}
           package: .
