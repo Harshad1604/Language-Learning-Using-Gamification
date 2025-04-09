@@ -3,7 +3,7 @@ name: Build and Deploy Python app to Azure Web App
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'  # 🔁 Change if your app uses a different Python version
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
@@ -26,7 +26,7 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: language-learning  # 🔁 Replace with your actual Azure App Service name
+          app-name: language-learning
           slot-name: 'production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE  }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: .
